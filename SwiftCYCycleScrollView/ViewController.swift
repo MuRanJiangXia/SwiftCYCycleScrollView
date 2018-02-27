@@ -15,7 +15,7 @@ class ViewController: UIViewController,CycleScrollViewDelegate {
         super.viewDidLoad()
         //使用网络图片 
         var cycleScrollView = CYCycleScrollView()
-        cycleScrollView = CYCycleScrollView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 300))
+        cycleScrollView = CYCycleScrollView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 200))
         view.addSubview(cycleScrollView)
         cycleScrollView.imageNames = [
         "https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a4b3d7085dee3d6d2293d48b252b5910/0e2442a7d933c89524cd5cd4d51373f0830200ea.jpg",
@@ -25,8 +25,8 @@ class ViewController: UIViewController,CycleScrollViewDelegate {
         
         //使用本地图片
         var cycleScrollView2 = CYCycleScrollView()
-        cycleScrollView2 = CYCycleScrollView(frame: CGRect(x: 0, y: 400, width: self.view.frame.width, height: 300))
-        view.addSubview(cycleScrollView)
+        cycleScrollView2 = CYCycleScrollView(frame: CGRect(x: 0, y: 300, width: self.view.frame.width, height: 200))
+        view.addSubview(cycleScrollView2)
          cycleScrollView2.imageNames = ["h1.jpg","h2.jpg","h3.jpg"]
 
     }
